@@ -36,10 +36,19 @@ information retrieval   Information retrieval (IR) in computing and information 
 
 ## Effectiveness
 
-### Robust04
+|                  | NDCG@10 | NDCG@20 | AP     | P@10   | P@20   | MRR@10 |
+|------------------|---------|---------|--------|--------|--------|--------|
+| Robust04         | 0.5113  | 0.4760  | 0.2840 | 0.4936 | 0.4060 |        |
+| [TREC DL 20][1]  | 0.7536  | 0.7209  | 0.5283 | 0.8093 | 0.6815 |        |
+| [MSMARCO Dev][2] |         |         |        |        |        | 0.394  |
 
-```
-map                     all     0.2840
-P_20                    all     0.4060
-ndcg_cut_20             all     0.4760
-```
+### Notes
+
+- Robust04 first-stage: Indri Query Likelihood
+- Robust04 document aggregation: MaxP
+- TREC DL 20 first-stage: BM25 on [DeepCT][3] enriched collection
+- MSMARCO Dev first-stage: BM25 on [DeepCT][3] enriched collection
+
+[1]: https://trec.nist.gov/pubs/trec29/papers/RMIT.DL.pdf
+[2]: https://microsoft.github.io/msmarco
+[3]: https://github.com/AdeDZY/DeepCT
