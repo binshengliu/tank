@@ -52,3 +52,10 @@ information retrieval   Information retrieval (IR) in computing and information 
 [1]: https://trec.nist.gov/pubs/trec29/papers/RMIT.DL.pdf
 [2]: https://microsoft.github.io/msmarco
 [3]: https://github.com/AdeDZY/DeepCT
+
+## Citation
+
+```
+B. Liu, H. Zamani, X. Lu, J. S. Culpepper, Generalizing Discriminative Retrieval
+Models using Generative Tasks, in: Proc. WWW, 2021, pp. 3745–3756.
+```
